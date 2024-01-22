@@ -1,0 +1,176 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\views\\project\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:views\\project\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\views\\project\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:views\\project\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\views\\project\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:views\\project\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\comp2139_lab1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:comp2139_lab1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\comp2139_lab1.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:comp2139_lab1.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "COMP2139_Lab1.csproj",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\COMP2139_Lab1.csproj",
+              "RelativeDocumentMoniker": "COMP2139_Lab1.csproj",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\COMP2139_Lab1.csproj",
+              "RelativeToolTip": "COMP2139_Lab1.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-01-21T13:48:11.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Views\\Project\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Project\\Details.cshtml",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Views\\Project\\Details.cshtml",
+              "RelativeToolTip": "Views\\Project\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-20T23:37:55.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Views\\Project\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Project\\Create.cshtml",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Views\\Project\\Create.cshtml",
+              "RelativeToolTip": "Views\\Project\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-20T23:36:37.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Views\\Project\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Project\\Index.cshtml",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Views\\Project\\Index.cshtml",
+              "RelativeToolTip": "Views\\Project\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-17T14:09:52.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProjectController.cs",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "Controllers\\ProjectController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAuwBsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-17T14:01:14.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "COMP2139_Lab1",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\COMP2139_Lab1.csproj",
+              "RelativeDocumentMoniker": "COMP2139_Lab1.csproj",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\COMP2139_Lab1.csproj",
+              "RelativeToolTip": "COMP2139_Lab1.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-01-17T13:56:10.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "Models\\Project.cs",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Models\\Project.cs",
+              "RelativeToolTip": "Models\\Project.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-17T13:32:24.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-10T14:39:54.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-10T14:30:51.038Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

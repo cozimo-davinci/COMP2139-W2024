@@ -1,0 +1,39 @@
+﻿@model List<Project>
+
+@{
+    // razor block
+    ViewData["Title"] = "Projects";
+
+}
+
+<h2>Projects</h2>
+
+@if(Model.Any())
+{
+ <table class="table">
+     <thead>
+         <tr>
+             <th>ID</th>
+             <th>Name</th>
+             <th>Description</th>
+         </tr>
+     </thead>
+
+        <tbody>
+            @foreach(var project in Model)
+            {
+                <tr>
+                    <td>@project.projectID</td>
+                    <td>@project.Name</td>
+                    <td>@project.Description</td>
+                </tr>
+            }
+            
+        </tbody>
+ </table>
+    
+
+} else
+{
+    <p>No projects available</p>
+}
