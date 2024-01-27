@@ -10,7 +10,9 @@ namespace COMP2139_Lab1.Controllers
         {
             var projects = new List<Project>()
             {
-                new Project {projectID = 1, Name = "Project 1", Description = "My First Project"}
+                new Project {projectID = 1, Name = "Project 1", Description = "My First Project"},
+                new Project {projectID = 2, Name = "Data Miner", Description = "Advanced Data Scraper"},
+                new Project {projectID = 3, Name = "Blockchain Scanner", Description = "AML Blockchain Scanner"}
             };
 
             return View(projects);

@@ -3,7 +3,7 @@
 namespace COMP2139_Lab1.Models
 {
     public class Project
-    {
+    { 
         [Key]
         public int projectID {  get; set; }
 
