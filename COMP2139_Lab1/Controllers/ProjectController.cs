@@ -113,5 +113,20 @@ namespace COMP2139_Lab1.Controllers
             }
             return View(project);
         }
+
+        [HttpPost, ActionName("DeleteConfirmed")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var project = _context.Projects.Find(id);
+           if(project != null)
+            {
+                _context.Projects.Remove(project);
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            
+            return NotFound();
+        }
     }
 }

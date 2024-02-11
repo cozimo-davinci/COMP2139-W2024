@@ -16,6 +16,15 @@
                 <dt class="col-sm-3">Project ID</dt>
                 <dd class="col-sm-9">@Model.projectID</dd>
 
+                <dt class="col-sm-3">Start Date</dt>
+                <dd class="col-sm-9">@Model.StartDate.ToShortDateString()</dd>
+            
+                <dt class="col-sm-3">End Date</dt>
+                <dd class="col-sm-9">@Model.EndDate.ToShortDateString()</dd>
+
+                <dt class="col-sm-3">Status</dt>
+                <dd class="col-sm-9">@Model.Status</dd>
+
             </dl>
             <a asp-controller="Project" asp-action="Edit" asp-route-id="@Model.projectID" class="btn btn-primary">Edit</a>
             <a asp-controller="Project" asp-action="Index"  class="btn btn-danger">Cancel</a>
@@ -23,11 +32,11 @@
 
     </div>
    
-
-
-
-
-
-
-
 </div>
+
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

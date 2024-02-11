@@ -6,8 +6,9 @@
 
 }
 
-<h2>Projects</h2>
+<h2>Projects</h2> <br />
 
+<a asp-action="Create" class="btn btn-primary">Create New Project</a>
 @if(Model.Any())
 {
  <table class="table">
@@ -16,6 +17,7 @@
              <th>ID</th>
              <th>Name</th>
              <th>Description</th>
+             <th>Action</th> <!-- Column for action buttons Details, Edit, Delete-->
          </tr>
      </thead>
 
@@ -26,14 +28,21 @@
                     <td>@project.projectID</td>
                     <td>@project.Name</td>
                     <td>@project.Description</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@project.projectID" class="btn btn-info">Details</a>
+                        <a asp-action="Edit" asp-route-id="@project.projectID" class="btn btn-secondary">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@project.projectID" class="btn btn-danger">Delete</a>
+
+                    </td>
                 </tr>
             }
             
         </tbody>
- </table>
+ </table> <br />
     
 
 } else
 {
+    <br />
     <p>No projects available</p>
 }
