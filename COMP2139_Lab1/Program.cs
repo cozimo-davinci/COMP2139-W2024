@@ -16,6 +16,7 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
+    app.UseStatusCodePagesWithRedirects("/Home/NotFound/?statusCode={0}");
 }
 app.UseStaticFiles();
 

@@ -32,7 +32,7 @@ namespace COMP2139_Lab1.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Project project)
         {
-            if(ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 _context.Projects.Add(project);
                 _context.SaveChanges();
@@ -75,7 +75,7 @@ namespace COMP2139_Lab1.Controllers
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 try
                 {
@@ -116,9 +116,9 @@ namespace COMP2139_Lab1.Controllers
 
         [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
-        public IActionResult DeleteConfirmed(int id)
+        public IActionResult DeleteConfirmed(int projectID)
         {
-            var project = _context.Projects.Find(id);
+            var project = _context.Projects.Find(projectID);
            if(project != null)
             {
                 _context.Projects.Remove(project);
@@ -127,6 +127,28 @@ namespace COMP2139_Lab1.Controllers
             }
             
             return NotFound();
+        }
+
+
+        public async Task<IActionResult> Search( string searchString)
+        {
+            var projectQuery = from p in _context.Projects
+                               select p;
+
+            bool searchPerformed = !String.IsNullOrEmpty(searchString);
+
+            if (searchPerformed)
+            {
+                projectQuery = projectQuery.Where(p => p.Name.Contains(searchString)
+                || p.Description.Contains(searchString));
+            }
+
+            var projects = await projectQuery.ToListAsync();
+
+            ViewData["SearchPerformed"] = searchPerformed;
+            ViewData["SearchString"] = searchString;
+            
+            return View("Index", projects);
         }
     }
 }

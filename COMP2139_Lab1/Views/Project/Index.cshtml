@@ -3,6 +3,8 @@
 @{
     // razor block
     ViewData["Title"] = "Projects";
+    bool searchPerformed = ViewData["SearchPerformed"] as bool? ?? false;
+    string searchString = ViewData["SearchString"] as string;
 
 }
 
@@ -32,17 +34,25 @@
                         <a asp-action="Details" asp-route-id="@project.projectID" class="btn btn-info">Details</a>
                         <a asp-action="Edit" asp-route-id="@project.projectID" class="btn btn-secondary">Edit</a>
                         <a asp-action="Delete" asp-route-id="@project.projectID" class="btn btn-danger">Delete</a>
+                        <a asp-controller="Task" asp-action="Index"  asp-route-projectID="@project.projectID" class="btn btn-warning">View Tasks</a>
 
                     </td>
                 </tr>
             }
             
         </tbody>
- </table> <br />
-    
+    </table> <br />
+
 
 } else
 {
-    <br />
-    <p>No projects available</p>
+    if (searchPerformed)
+    {
+        <p> No projects with the name or description "@searchString" were found</p>
+    }
+    else
+    {
+        <p>No projects available</p>
+    }
+    
 }

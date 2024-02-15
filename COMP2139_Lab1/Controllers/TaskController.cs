@@ -91,28 +91,26 @@ namespace COMP2139_Lab1.Controllers
             ViewBag.Projects = new SelectList(_context.Projects, "projectID", "Name", task.projectID);
             return View(task);
 
-
-            
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, [Bind("ProjectTaskId", "Title", "Description", "projectID")] ProjectTask task)
         {
-            if(id != task.ProjectTaskId)
+            if (id == task.ProjectTaskId)
             {
-                return NotFound();
+                if (ModelState.IsValid)
+                {
+                    _context.ProjectTasks.Update(task);
+                    _context.SaveChanges();
+                    return RedirectToAction("Index", new { projectID = task.projectID });
+                }
+
+                ViewBag.Projects = new SelectList(_context.Projects, "projectID", "Name", task.projectID);
+                return View(task);
             }
 
-            if(ModelState.IsValid)
-            {
-                _context.ProjectTasks.Add(task);
-                _context.SaveChanges();
-                return RedirectToAction("Index", new {projectID = task.projectID});
-            }
-
-            ViewBag.Projects = new SelectList(_context.Projects, "projectID", "Name", task.projectID);
-            return View(task);
+            return NotFound();
         }
 
         [HttpGet]
@@ -148,6 +146,27 @@ namespace COMP2139_Lab1.Controllers
             return NotFound();
 
             
+        }
+
+        public async Task<IActionResult> Search(int? projectID, string searchString)
+        {
+            var taskQuery = _context.ProjectTasks.AsQueryable();
+
+            // if projectID was passed 
+            if (projectID.HasValue)
+            {
+                taskQuery = taskQuery.Where(t => t.projectID == projectID.Value);
+            }
+
+            if(!string.IsNullOrEmpty(searchString))
+            {
+                taskQuery = taskQuery.Where(t => t.Title.Contains(searchString) 
+                || t.Description.Contains(searchString));
+            }
+
+            var tasks = await taskQuery.ToListAsync();
+            ViewBag.projectID = projectID;
+            return View("Index", tasks);
         }
     }
 }

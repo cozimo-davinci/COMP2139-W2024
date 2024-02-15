@@ -8,7 +8,8 @@ namespace COMP2139_Lab1.Models
         public int projectID {  get; set; }
 
         [Required]
-        public required string Name { get; set; }
+        [StringLength(20, MinimumLength = 3, ErrorMessage = "The name should consist at least 3 letters, but no more than 20")]
+        public string Name { get; set; }
 
         public string? Description { get; set; }
 
@@ -20,6 +21,14 @@ namespace COMP2139_Lab1.Models
 
         public string? Status { get; set; }
 
+        public List<ProjectTask> Tasks { get; set; }
 
+        public IEnumerable<ValidationResult>Validate(ValidationContext validationContext)
+        {
+            if(EndDate > StartDate)
+            {
+                yield return new ValidationResult("End Date must be greater than Start Date", new[] {nameof(EndDate), nameof(StartDate)});
+            }
+        }
     }
 }

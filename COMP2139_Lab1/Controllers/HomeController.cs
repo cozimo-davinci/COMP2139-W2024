@@ -23,6 +23,34 @@ namespace COMP2139_Lab1.Controllers
             return View();
         }
 
+
+        public IActionResult GeneralSearch(string searchType, string searchString)
+        {
+            if(searchType == "Projects")
+            {
+                return RedirectToAction("Search", "Project", new {searchString});
+            }
+            else if (searchType == "Tasks")
+            {
+                // var url = Url.Action("Search", "Task", new { searchString });
+                return RedirectToAction("Search", "Task", new { searchString });
+            }
+            return RedirectToAction("Index", "Home");
+        }
+
+        public IActionResult NotFound( int statusCode)
+        {
+            if(statusCode == 404)
+            {
+                return View("NotFound");
+            }
+            
+            
+                return View("Error");
+            
+        }
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
