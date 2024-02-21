@@ -1,4 +1,4 @@
-﻿using COMP2139_Lab1.Models;
+﻿using COMP2139_Lab1.Areas.ProjectManagement.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace COMP2139_Lab1.Data
