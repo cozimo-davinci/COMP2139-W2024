@@ -19,7 +19,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
             _context = context;
         }
 
-        [HttpGet("Index/{projectID:int}")]
+        [HttpGet("")]
         public IActionResult Index(int projectID)
         {
             var tasks = _context.ProjectTasks.
@@ -31,7 +31,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
             return View(tasks);
         }
 
-        [HttpGet("Details/{id: int}")]
+        [HttpGet("Details/{id:int}")]
         public IActionResult Details(int id)
         {
             var task = _context.ProjectTasks.
@@ -45,7 +45,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
             return View(task);
         }
 
-        [HttpGet("Create/{projectID:int}")]
+        [HttpGet("Create")]
         public IActionResult Create(int projectID)
         {
             var project = _context.Projects.Find(projectID);
@@ -63,7 +63,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
             return View(task);
         }
 
-        [HttpPost]
+        [HttpPost("Create")]
         [ValidateAntiForgeryToken]
         public IActionResult Create([Bind("Title", "Description", "projectID")] ProjectTask task)
         {
@@ -78,7 +78,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
             return View(task);
         }
 
-        [HttpGet("Edit/{id: int}")]
+        [HttpGet("Edit/{id:int}")]
         public IActionResult Edit(int id)
         {
             var task = _context.ProjectTasks.
@@ -94,7 +94,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
 
         }
 
-        [HttpPost("Edit/{id: int}")]
+        [HttpPost("Edit/{id:int}")]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, [Bind("ProjectTaskId", "Title", "Description", "projectID")] ProjectTask task)
         {
@@ -149,7 +149,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
 
         }
 
-        [HttpGet("Search/{projectID: int}/{searchString?}")]
+        [HttpGet("Search/{searchString?}")]
         public async Task<IActionResult> Search(int? projectID, string searchString)
         {
             var taskQuery = _context.ProjectTasks.AsQueryable();

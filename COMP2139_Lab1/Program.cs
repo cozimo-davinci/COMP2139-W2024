@@ -24,13 +24,15 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "areas",
-    pattern: "{area:exists}/{controller=Project}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
     name: "areas",
-    pattern: "{area:exists}/{controller=ProjectTask}/{action=Index}/{id?}");
+    pattern: "{areas:exists}/{controller=Project}/{action=Index}/{id?}");
+
+/*app.MapControllerRoute(
+    name: "projectTaskArea",
+    pattern: "{projectTaskArea:exists}/{controller=ProjectTask}/{action=Index}/{id?}");
+*/
 
 
 app.MapControllerRoute(

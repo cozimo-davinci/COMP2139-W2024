@@ -19,6 +19,7 @@
              <th>ID</th>
              <th>Name</th>
              <th>Description</th>
+             <td>Summary</td>
              <th>Action</th> <!-- Column for action buttons Details, Edit, Delete-->
          </tr>
      </thead>
@@ -30,6 +31,13 @@
                     <td>@project.projectID</td>
                     <td>@project.Name</td>
                     <td>@project.Description</td>
+
+                    <!-- Inject ViewComponent-->
+                    <td>
+                        @await Component.InvokeAsync("ProjectSummary", new {projectId = project.projectID})
+                    </td>
+
+
                     <td>
                         <a asp-action="Details" asp-route-id="@project.projectID" class="btn btn-info">Details</a>
                         <a asp-action="Edit" asp-route-id="@project.projectID" class="btn btn-secondary">Edit</a>
