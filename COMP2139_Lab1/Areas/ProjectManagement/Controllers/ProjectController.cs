@@ -45,7 +45,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
             return View(project);
         }
 
-        [HttpGet("Details/{id:int}")]
+        [HttpGet("Details/{id}")]
         public IActionResult Details(int id)
         {
             var project = _context.Projects.FirstOrDefault(p => p.projectID == id);
@@ -58,7 +58,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
             return View(project);
         }
 
-        [HttpGet("Edit/{id:int}")]
+        [HttpGet("Edit/{id}")]
         public IActionResult Edit(int id)
         {
             var project = _context.Projects.Find(id);
@@ -69,7 +69,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
             return View(project);
         }
 
-        [HttpPost("Edit/{id:int}")]
+        [HttpPost("Edit/{id}")]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, [Bind("projectID, Name, Description")] Project project)
         {
@@ -106,7 +106,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
             return _context.Projects.Any(e => e.projectID == id);
         }
 
-        [HttpGet("Delete/{id:int}")]
+        [HttpGet("Delete/{id}")]
         public IActionResult Delete(int id)
         {
             var project = _context.Projects.FirstOrDefault(d => d.projectID == id);
@@ -117,7 +117,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
             return View(project);
         }
 
-        [HttpPost("DeleteConfirmed/{projectID: int}"), ActionName("DeleteConfirmed")]
+        [HttpPost("DeleteConfirmed/{projectID}"), ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int projectID)
         {

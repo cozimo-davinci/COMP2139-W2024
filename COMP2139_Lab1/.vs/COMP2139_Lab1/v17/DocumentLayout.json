@@ -7,16 +7,28 @@
       "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:views\\shared\\components\\projectsummary\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\areas\\projectmanagement\\views\\project\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:areas\\projectmanagement\\views\\project\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\areas\\projectmanagement\\components\\projectsummary\\projectsummaryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:areas\\projectmanagement\\components\\projectsummary\\projectsummaryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\areas\\projectmanagement\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:areas\\projectmanagement\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\areas\\projectmanagement\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:areas\\projectmanagement\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\areas\\projectmanagement\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:areas\\projectmanagement\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\areas\\projectmanagement\\components\\projectsummary\\projectsummaryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:areas\\projectmanagement\\components\\projectsummary\\projectsummaryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\areas\\projectmanagement\\views\\project\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:areas\\projectmanagement\\views\\project\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,27 +50,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "TaskController.cs",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Controllers\\TaskController.cs",
+              "RelativeDocumentMoniker": "Areas\\ProjectManagement\\Controllers\\TaskController.cs",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Controllers\\TaskController.cs",
+              "RelativeToolTip": "Areas\\ProjectManagement\\Controllers\\TaskController.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAgwJcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T15:55:51.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "Areas\\ProjectManagement\\Controllers\\ProjectController.cs",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "Areas\\ProjectManagement\\Controllers\\ProjectController.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAcwIYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T15:15:49.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T15:07:16.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Views\\Project\\Index.cshtml",
               "RelativeDocumentMoniker": "Areas\\ProjectManagement\\Views\\Project\\Index.cshtml",
               "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Views\\Project\\Index.cshtml",
               "RelativeToolTip": "Areas\\ProjectManagement\\Views\\Project\\Index.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACIAAAAtAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACIAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-06T14:49:39.995Z"
+              "WhenOpened": "2024-03-06T14:49:39.995Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Project.cs",
               "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Models\\Project.cs",
               "RelativeDocumentMoniker": "Areas\\ProjectManagement\\Models\\Project.cs",
               "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Models\\Project.cs",
               "RelativeToolTip": "Areas\\ProjectManagement\\Models\\Project.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAA2AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T14:45:07.034Z"
+              "WhenOpened": "2024-03-06T14:45:07.034Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -68,22 +121,23 @@
               "RelativeDocumentMoniker": "Views\\Shared\\Components\\ProjectSummary\\Default.cshtml",
               "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Views\\Shared\\Components\\ProjectSummary\\Default.cshtml",
               "RelativeToolTip": "Views\\Shared\\Components\\ProjectSummary\\Default.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-06T14:43:36.615Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ProjectSummaryViewComponent.cs",
               "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Components\\ProjectSummary\\ProjectSummaryViewComponent.cs",
               "RelativeDocumentMoniker": "Areas\\ProjectManagement\\Components\\ProjectSummary\\ProjectSummaryViewComponent.cs",
               "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Components\\ProjectSummary\\ProjectSummaryViewComponent.cs",
               "RelativeToolTip": "Areas\\ProjectManagement\\Components\\ProjectSummary\\ProjectSummaryViewComponent.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAADwvxoAAAAMAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T14:28:46.337Z"
+              "WhenOpened": "2024-03-06T14:28:46.337Z",
+              "EditorCaption": ""
             }
           ]
         }

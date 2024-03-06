@@ -31,7 +31,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
             return View(tasks);
         }
 
-        [HttpGet("Details/{id:int}")]
+        [HttpGet("Details/{id}")]
         public IActionResult Details(int id)
         {
             var task = _context.ProjectTasks.
@@ -78,7 +78,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
             return View(task);
         }
 
-        [HttpGet("Edit/{id:int}")]
+        [HttpGet("Edit/{id}")]
         public IActionResult Edit(int id)
         {
             var task = _context.ProjectTasks.
@@ -94,7 +94,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
 
         }
 
-        [HttpPost("Edit/{id:int}")]
+        [HttpPost("Edit/{id}")]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(int id, [Bind("ProjectTaskId", "Title", "Description", "projectID")] ProjectTask task)
         {
@@ -114,7 +114,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
             return NotFound();
         }
 
-        [HttpGet("Delete/{id:int}")]
+        [HttpGet("Delete/{id}")]
         public IActionResult Delete(int id)
         {
             var task = _context.ProjectTasks.
@@ -131,7 +131,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
 
         }
 
-        [HttpPost("DeleteConfirmed/{projectTaskID:int}"), ActionName("DeleteConfirmed")]
+        [HttpPost("DeleteConfirmed/{projectTaskID}"), ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int projectTaskID)
         {
