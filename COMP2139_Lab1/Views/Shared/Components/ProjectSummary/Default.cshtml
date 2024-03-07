@@ -1,20 +1,27 @@
-﻿@model COMP2139_Lab1.Areas.ProjectManagement.Models.Project
+﻿<link rel="stylesheet" href="~/css/DefaultStyleTemplate.css" />
+@model COMP2139_Lab1.Areas.ProjectManagement.Models.Project
 
-<div class="project-summary">
-    <p><b>@Model.Name</b></p>
-    <p><b>@Model.Description</b></p>
-    <p><b>Start Date: </b>@Model.StartDate.ToShortDateString()</p>
-    <p><b>End Date: </b>@Model.EndDate.ToShortDateString()</p>
-    <p><b>Status: </b>@Model.Status</p>
+<div class="project-summary card">
+    
+    <div class="card-content">
+        <p><i class="fa-brands fa-battle-net"></i> <b>@Model.Name</b></p>
+        <p><i class="fa-solid fa-comment-medical"></i> <b>@Model.Description</b></p>
+        <p><i class="fa-regular fa-calendar"></i> <b>Start Date: </b>@Model.StartDate.ToShortDateString()</p>
+        <p><i class="fa-regular fa-calendar"></i> <b>End Date: </b>@Model.EndDate.ToShortDateString()</p>
+        <p><i class="fa-solid fa-signal"></i> <b>Status: </b>@Model.Status</p>
 
-    <p><b>Tasks</b></p>
+        <p><i class="fa-solid fa-staff-snake"></i> <b>Tasks:</b></p>
 
-    <ul>
-        @foreach(var task in Model.Tasks)
-        {
-            <li>@task.Title ==> @task.Description</li>
-        }
-    </ul>
+        <ul class="list-inline">
+            @foreach (var task in Model.Tasks)
+            {
+                <li><i class="fa-solid fa-thumbtack"></i> <b>@task.Title</b> ==> @task.Description</li>
+            }
+        </ul>
+
+    </div>
+    
+    
 </div>
 
 

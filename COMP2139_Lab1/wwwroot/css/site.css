@@ -16,3 +16,19 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.nav-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: darkcyan;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: darkcyan;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}

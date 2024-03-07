@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sJXmeSFi3Mh+CvnrxI7U69QbYT1hiOHPBHGW79GkwfA=",
+  "Hash": "NBc7ZCMUviqiGdTtRqTEhQdJDbgo90UyYiM42QTVLG4=",
   "Source": "COMP2139_Lab1",
   "BasePath": "_content/COMP2139_Lab1",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\COMP2139_Lab1.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\wwwroot\\css\\DefaultStyleTemplate.css",
+      "SourceId": "COMP2139_Lab1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\wwwroot\\",
+      "BasePath": "_content/COMP2139_Lab1",
+      "RelativePath": "css/DefaultStyleTemplate.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\DefaultStyleTemplate.css"
     },
     {
       "Identity": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\wwwroot\\css\\site.css",
