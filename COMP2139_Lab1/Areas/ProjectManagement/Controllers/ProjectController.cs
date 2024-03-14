@@ -18,9 +18,9 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
         }
 
         [HttpGet("")]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var projects = _context.Projects.ToList();
+            var projects = await _context.Projects.ToListAsync();
 
             return View(projects);
         }
@@ -33,12 +33,12 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
 
         [HttpPost("Create")]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Project project)
+        public async Task<IActionResult> Create(Project project)
         {
             if (!ModelState.IsValid)
             {
-                _context.Projects.Add(project);
-                _context.SaveChanges();
+                await _context.Projects.AddAsync(project);
+                await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
 
@@ -46,9 +46,9 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
         }
 
         [HttpGet("Details/{id}")]
-        public IActionResult Details(int id)
+        public async Task<IActionResult> Details(int id)
         {
-            var project = _context.Projects.FirstOrDefault(p => p.projectID == id);
+            var project = await _context.Projects.FirstOrDefaultAsync(p => p.projectID == id);
 
             if (project == null)
             {
@@ -59,9 +59,9 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
         }
 
         [HttpGet("Edit/{id}")]
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
-            var project = _context.Projects.Find(id);
+            var project = await _context.Projects.FindAsync(id);
             if (project == null)
             {
                 return NotFound();
@@ -71,7 +71,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
 
         [HttpPost("Edit/{id}")]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind("projectID, Name, Description")] Project project)
+        public async Task<IActionResult> Edit(int id, [Bind("projectID, Name, Description")] Project project)
         {
             if (id != project.projectID)
             {
@@ -83,7 +83,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
                 try
                 {
                     _context.Update(project);
-                    _context.SaveChanges();
+                    await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -107,9 +107,9 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
         }
 
         [HttpGet("Delete/{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var project = _context.Projects.FirstOrDefault(d => d.projectID == id);
+            var project = await _context.Projects.FirstOrDefaultAsync(d => d.projectID == id);
             if (project == null)
             {
                 return NotFound();
@@ -119,13 +119,13 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
 
         [HttpPost("DeleteConfirmed/{projectID}"), ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
-        public IActionResult DeleteConfirmed(int projectID)
+        public async Task<IActionResult> DeleteConfirmed(int projectID)
         {
-            var project = _context.Projects.Find(projectID);
+            var project = await _context.Projects.FindAsync(projectID);
             if (project != null)
             {
                 _context.Projects.Remove(project);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
 
@@ -138,7 +138,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
             var projectQuery = from p in _context.Projects
                                select p;
 
-            bool searchPerformed = !string.IsNullOrEmpty(searchString);
+            bool searchPerformed = !String.IsNullOrEmpty(searchString);
 
             if (searchPerformed)
             {

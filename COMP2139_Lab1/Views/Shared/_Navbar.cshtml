@@ -1,6 +1,8 @@
 ﻿
 @{
 }
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
 
 <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-black border-bottom box-shadow mb-3">
     <div class="container-fluid">
@@ -11,10 +13,10 @@
         </button>
         <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
 
-            <form class="d-flex" asp-controller="Home" asp-action="General Search" method="get">
-                <input class="form-control me-2" type="search" placeholder="Search...." name="searchString" value="@ViewData["SearchString"]" />
+            <form class="d-flex" asp-controller="Home" asp-action="GeneralSearch" method="get" style="margin-left: 1em;">
+                <input class="form-control" type="text" placeholder="Search" name="searchString" />
                 &nbsp;
-                <select class="form-control btn btn-info dropdown-toggle" name="searchType">
+                <select class="form-control btn btn-secondary dropdown-toggle" name="searchType">
                     <option value="Projects">Projects</option>
                     <option value="Tasks">Tasks</option>
                 </select>
@@ -25,15 +27,43 @@
 
 
             <ul class="navbar-nav flex-grow-1 justify-content-end">
-                <li class="nav-item m-3">
+                <li class="nav-item m-1">
                     <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index"> <i class="fa-solid fa-house-user"></i> Home</a>
                 </li>
-                <li class="nav-item m-3">
+                <li class="nav-item m-1">
                     <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="About"> <i class="fa-solid fa-circle-info"></i> About</a>
                 </li>
-                <li class="nav-item m-3">
+                <li class="nav-item m-1">
                     <a class="nav-link text-white" asp-area="ProjectManagement" asp-controller="Project" asp-action="Index"> <i class="fa-solid fa-flask"></i> Projects</a>
                 </li>
+
+                @if(SignInManager.IsSignedIn(User))
+                {
+                    // display profile
+                    <li class="nav-item m-1">
+                        <a class="nav-link text-white" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage your profile"><i class="fa-solid fa-yin-yang"></i> Profile</a>
+                    </li>
+
+                    // display logout button
+                    <li class="nav-item m-1">
+                        <form asp-area="Identity" asp-page="/Account/Logout" method="post">
+                            <button type="submit" class="nav-link btn btn-link text-white" style="cursor:pointer">Logout</button>
+                        </form>
+                    </li>
+                    
+                } else
+                {
+                    // display login button
+                    <li class="nav-item m-1">
+                        <a class="nav-link text-white" asp-area="Identity" asp-page="/Account/Login"><i class="fa-solid fa-user-ninja"></i> Login</a>
+                    </li>
+
+                    // display register button
+                    <li class="nav-item m-1">
+                        <a class="nav-link text-white" asp-area="Identity" asp-page="/Account/Register"><i class="fa-solid fa-user-astronaut"></i> Register</a>
+                    </li>
+                }
+
             </ul>
         </div>
     </div>

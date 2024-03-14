@@ -34,9 +34,26 @@
    
 </div>
 
-@section Scripts {
+<div id="projectComments">
+    <h3 class="mt-2">Comments</h3>
+    <div id="commentsList" class="comments-container">
+        <!--Comments will be loaded here-->
+        <form id="addCommentForm" class="mt-3">
+            <input type="hidden" name="projectID" value="Model.projectID" />
+            <div class="form-group">
+                <textarea name="Content" class="form-control" placeholder="Add a comment"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success mt-3">Add Comment</button>
+        </form>
+    </div>
+</div>
 
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+@section Scripts {
+    <script src="~/js/projectComments.js"></script>
+    <script>
+        $(document).ready(function () {
+            var projectID = $('#projectComments input[name="projectID"]').val();
+            loadComments(projectID);
+        });
+    </script>
 }
