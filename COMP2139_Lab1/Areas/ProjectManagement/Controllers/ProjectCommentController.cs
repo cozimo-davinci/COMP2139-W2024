@@ -30,7 +30,14 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Controllers
 
         public async Task<IActionResult> AddComment([FromBody] ProjectComment comment)
         {
-            if(!ModelState.IsValid)
+           /* if (comment == null)
+            {
+                // Handle the case where the comment object is null
+                return Json(new { success = false, message = "Something Went Wrong. Try Again!" });
+            } */
+
+
+            if (ModelState.IsValid)
             {
                 comment.DatePosted = DateTime.Now;
                 _context.ProjectComments.Add(comment);

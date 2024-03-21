@@ -15,7 +15,7 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Models
         [Display(Name = "Posted Date")]
         [DisplayFormat(DataFormatString ="{0:yyyy-mm-dd}", ApplyFormatInEditMode = true)]
         [DataType(DataType.Date)]
-        public DateTime DatePosted { get; set; }
+        public DateTime? DatePosted { get; set; }
         public int projectID { get; set; }
 
         public Project Project { get; set; }
