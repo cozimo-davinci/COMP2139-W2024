@@ -1,51 +1,64 @@
-﻿function loadComment(projectID) {
+﻿function loadComments(projectID) {
     $.ajax({
         url: '/ProjectManagement/ProjectComment/GetComments?projectID=' + projectID,
         method: 'GET',
         success: function (data) {
             var commentHtml = '';
-            for (var i = 0; i < data.length; i++) {
-                commentHtml += '<div class="comment">';
-                commentHtml += '<p>' + data[i].content + '</p>';
-                commentHtml += '<span>Posted on ' + new Date(data[i].datePosted).toLocaleDateString() + '</span>';
-                commentHtml += '</div>';
-            }
-            $('#commentList').html(commentHtml);
+            data.forEach(function (comment) {
+                commentHtml += `
+                <div class="card mb-3">
+                    <div class="card-header text-muted">
+                        Posted on ${new Date(comment.datePosted).toLocaleString()}
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">${comment.content}</p>
+                    </div>
+                </div>`;
+            });
+            $('#commentsList').html(commentHtml);
         }
     });
 }
 
-$(document).ready(function () {
 
+$(document).ready(function () {
     var projectID = $('#projectComments input[name="projectID"]').val();
 
-    loadComment(projectID);
+    loadComments(projectID);
 
     $('#addCommentForm').submit(function (e) {
         e.preventDefault();
+
         var formData = {
             projectID: projectID,
             Content: $('#projectComments textarea[name="Content"]').val()
         };
+
 
         $.ajax({
             url: '/ProjectManagement/ProjectComment/AddComment',
             method: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(formData),
+
             success: function (response) {
                 if (response.success) {
-                    $('#projectComments textarea[name="Content"]').val(''); //clear message area 
-                    loadComment(projectID);
+                    $('#projectComments textarea[name="Content"]').val(''); //Clear message area
+                    loadComments(projectID);
+
                 } else {
                     alert(response.message);
-                }
-            },
 
+                }
+
+            },
             error: function (xhr, status, error) {
                 alert("Error " + error);
+
             }
+
         });
 
     });
+
 });

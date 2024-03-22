@@ -13,11 +13,11 @@ namespace COMP2139_Lab1.Areas.ProjectManagement.Models
         public string? Content {  get; set; }
 
         [Display(Name = "Posted Date")]
-        [DisplayFormat(DataFormatString ="{0:yyyy-mm-dd}", ApplyFormatInEditMode = true)]
-        [DataType(DataType.Date)]
-        public DateTime? DatePosted { get; set; }
+        [DisplayFormat(DataFormatString ="{0:yyyy-MM-dd HH:mm:ss}", ApplyFormatInEditMode = true)]
+        [DataType(DataType.DateTime)]
+        public DateTime DatePosted { get; set; }
         public int projectID { get; set; }
 
-        public Project Project { get; set; }
+        public Project? Project { get; set; }
     }
 }

@@ -41,7 +41,7 @@ namespace COMP2139_Lab1.Areas.Identity.Pages.Account
         {
             _userManager = userManager;
             _userStore = userStore;
-            _emailStore = (IUserEmailStore<ApplicationUser>)GetEmailStore();
+            _emailStore = GetEmailStore();
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
@@ -72,6 +72,7 @@ namespace COMP2139_Lab1.Areas.Identity.Pages.Account
         /// </summary>
         public class InputModel
         {
+            
             [Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 3)]
             [Display(Name = "First Name")]
@@ -81,7 +82,7 @@ namespace COMP2139_Lab1.Areas.Identity.Pages.Account
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 3)]
             [Display(Name = "Last Name")]
             public string LastName { get; set; }
-
+            
 
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
@@ -127,8 +128,8 @@ namespace COMP2139_Lab1.Areas.Identity.Pages.Account
             {
                 var user = CreateUser();
 
-                await _userStore.SetUserNameAsync((ApplicationUser)user, Input.Email, CancellationToken.None);
-                await _emailStore.SetEmailAsync((ApplicationUser)user, Input.Email, CancellationToken.None);
+                await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
+                await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
 
                 MailAddress address = new MailAddress(Input.Email);
                 string userName = address.User;
@@ -143,14 +144,14 @@ namespace COMP2139_Lab1.Areas.Identity.Pages.Account
 
                 };
 
-                var result = await _userManager.CreateAsync((ApplicationUser)user, Input.Password);
+                var result = await _userManager.CreateAsync(user, Input.Password);
 
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
 
-                    var userId = await _userManager.GetUserIdAsync((ApplicationUser)user);
-                    var code = await _userManager.GenerateEmailConfirmationTokenAsync((ApplicationUser)user);
+                    var userId = await _userManager.GetUserIdAsync(user);
+                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                     var callbackUrl = Url.Page(
                         "/Account/ConfirmEmail",
@@ -167,7 +168,7 @@ namespace COMP2139_Lab1.Areas.Identity.Pages.Account
                     }
                     else
                     {
-                        await _signInManager.SignInAsync((ApplicationUser)user, isPersistent: false);
+                        await _signInManager.SignInAsync(user, isPersistent: false);
                         return LocalRedirect(returnUrl);
                     }
                 }

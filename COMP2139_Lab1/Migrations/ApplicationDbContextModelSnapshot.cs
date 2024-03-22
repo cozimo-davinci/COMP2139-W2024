@@ -145,7 +145,7 @@ namespace COMP2139_Lab1.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<DateTime?>("DatePosted")
+                    b.Property<DateTime>("DatePosted")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("projectID")

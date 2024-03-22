@@ -50,8 +50,8 @@ app.MapControllerRoute(
     pattern: "{areas:exists}/{controller=Project}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
-    name: "projectTaskArea",
-    pattern: "{projectTaskArea:exists}/{controller=ProjectTask}/{action=Index}/{id?}");
+    name: "areas",
+    pattern: "{areas:exists}/{controller=ProjectTask}/{action=Index}/{id?}");
 
 
 
