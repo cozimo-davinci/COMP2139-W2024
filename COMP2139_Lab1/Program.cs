@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using COMP2139_Lab1.Services;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using COMP2139_Lab1.Areas.ProjectManagement.Models;
+using COMP2139_Lab1.Services.Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,17 +14,36 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+{
+    options.SignIn.RequireConfirmedAccount = true;
+})
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultUI()
+    .AddDefaultTokenProviders();
+
+
+/*
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultUI()
     .AddDefaultTokenProviders();
+*/
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
-    /*
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+
+
+/*    
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 */
+
+
 // This ensures that whenever an IEmailSender is injected an instance of EmailSender is provided
-builder.Services.AddSingleton<IEmailSender, EmailSender>();
+//builder.Services.AddSingleton<IEmailSender, EmailSender>();
+
+builder.Services.AddTransient<IEmailSender, EmailSender>();
+
+
 
 var app = builder.Build();
 
