@@ -11,7 +11,7 @@
 
 <h2>Projects</h2> <br />
 
-<a asp-action="Create" class="btn btn-primary" id="createButton">Create New Project</a>
+<a asp-action="Create" class="btn btn-primary" id="createButton"><i class="fa-solid fa-ghost"></i> Create New Project</a>
 <br />
 @if(Model.Any())
 {
@@ -41,10 +41,10 @@
 
 
                     <td class="card-actions">
-                        <a asp-action="Details" asp-route-id="@project.projectID" class="btn btn-info">Details</a>
-                        <a asp-action="Edit" asp-route-id="@project.projectID" class="btn btn-secondary">Edit</a>
-                        <a asp-action="Delete" asp-route-id="@project.projectID" class="btn btn-danger">Delete</a>
-                        <a asp-controller="Task" asp-action="Index"  asp-route-projectID="@project.projectID" class="btn btn-warning" id="viewTask" style="margin-top:-0.1em;">View Tasks</a>
+                        <a asp-action="Details" asp-route-id="@project.projectID" class="btn btn-info"><i class="fa-solid fa-circle-info"></i> Details</a>
+                        <a asp-action="Edit" asp-route-id="@project.projectID" class="btn btn-success"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a asp-action="Delete" asp-route-id="@project.projectID" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                        <a asp-controller="Task" asp-action="Index" asp-route-projectID="@project.projectID" class="btn btn-warning" id="viewTask" style="margin-top:-0.1em;"><i class="fa-solid fa-eye"></i> View Tasks</a>
 
                     </td>
                 </tr>

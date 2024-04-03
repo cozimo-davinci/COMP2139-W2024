@@ -8,11 +8,11 @@
 <table class="table">
     <thead>
         <tr>
-            <th>Task ID</th>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Project Id</th>
-            <th>Actions</th> <!-- Column for action buttons Details, Edit, Delete-->
+            <th><i class="fa-solid fa-user-secret"></i> Task ID</th>
+            <th><i class="fa-solid fa-pencil"></i> Title</th>
+            <th><i class="fa-solid fa-address-card"></i> Description</th>
+            <th><i class="fa-solid fa-scroll"></i> Project Id</th>
+            <th><i class="fa-solid fa-dumbbell"></i> Actions</th> <!-- Column for action buttons Details, Edit, Delete-->
         </tr>
     </thead>
 
@@ -25,9 +25,9 @@
                 <td>@task.Description</td>
                 <td>@task.projectID</td>
                 <td>
-                    <a asp-action="Details" asp-route-id="@task.projectID" class="btn btn-info">Details</a>
-                    <a asp-action="Edit" asp-route-id="@task.ProjectTaskId" class="btn btn-secondary">Edit</a>
-                    <a asp-action="Delete" asp-route-id="@task.ProjectTaskId" class="btn btn-danger">Delete</a>
+                    <a asp-action="Details" asp-route-id="@task.projectID" class="btn btn-info"><i class="fa-brands fa-readme"></i> Details</a>
+                    <a asp-action="Edit" asp-route-id="@task.ProjectTaskId" class="btn btn-secondary"><i class="fa-solid fa-paint-roller"></i> Edit</a>
+                    <a asp-action="Delete" asp-route-id="@task.ProjectTaskId" class="btn btn-danger"><i class="fa-solid fa-file-import"></i> Delete</a>
 
                 </td>
             </tr>
@@ -38,6 +38,6 @@
 <br />
 
 <!--Button to create a new task-->
-<a asp-action="Create" asp-route-projectID="@ViewBag.ProjectID" class="btn btn-primary">Create New Task</a>
+<a asp-action="Create" asp-route-projectID="@ViewBag.ProjectID" class="btn btn-primary"><i class="fa-solid fa-landmark-flag"></i> Create New Task</a>
 
-<a asp-controller="Project" asp-action="Index" class="btn btn-secondary">Back to Projects</a>
+<a asp-controller="Project" asp-action="Index" class="btn btn-secondary"><i class="fa-brands fa-docker"></i> Back to Projects</a>

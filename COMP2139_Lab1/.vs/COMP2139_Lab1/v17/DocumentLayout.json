@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\areas\\projectmanagement\\views\\task\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:areas\\projectmanagement\\views\\task\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\areas\\projectmanagement\\views\\task\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:areas\\projectmanagement\\views\\task\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\areas\\projectmanagement\\views\\task\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:areas\\projectmanagement\\views\\task\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\areas\\projectmanagement\\views\\task\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:areas\\projectmanagement\\views\\task\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\areas\\projectmanagement\\views\\task\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:areas\\projectmanagement\\views\\task\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|c:\\users\\teimu\\source\\repos\\comp2139-w2024\\comp2139_lab1\\areas\\projectmanagement\\views\\project\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C3DA550-AD0F-4BF4-8A7B-8AA435FBCB12}|COMP2139_Lab1.csproj|solutionrelative:areas\\projectmanagement\\views\\project\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +46,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-24T02:05:50.802Z",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Views\\Task\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\ProjectManagement\\Views\\Task\\Index.cshtml",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Views\\Task\\Index.cshtml",
+              "RelativeToolTip": "Areas\\ProjectManagement\\Views\\Task\\Index.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACgAAACBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-03T03:30:59.642Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EmailSender.cs",
-              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Services\\EmailSender.cs",
-              "RelativeDocumentMoniker": "Services\\EmailSender.cs",
-              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Services\\EmailSender.cs",
-              "RelativeToolTip": "Services\\EmailSender.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAQwAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T01:43:11.58Z",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Views\\Task\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\ProjectManagement\\Views\\Task\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Views\\Task\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\ProjectManagement\\Views\\Task\\Edit.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACgAAACYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-03T03:30:16.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Views\\Task\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\ProjectManagement\\Views\\Task\\Create.cshtml",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Views\\Task\\Create.cshtml",
+              "RelativeToolTip": "Areas\\ProjectManagement\\Views\\Task\\Create.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACAAAAB8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-03T03:30:03.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Views\\Task\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Areas\\ProjectManagement\\Views\\Task\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Views\\Task\\Delete.cshtml",
+              "RelativeToolTip": "Areas\\ProjectManagement\\Views\\Task\\Delete.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADUAAAB6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-03T03:29:52.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Views\\Task\\Details.cshtml",
+              "RelativeDocumentMoniker": "Areas\\ProjectManagement\\Views\\Task\\Details.cshtml",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Views\\Task\\Details.cshtml",
+              "RelativeToolTip": "Areas\\ProjectManagement\\Views\\Task\\Details.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-03T03:27:40.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Views\\Project\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\ProjectManagement\\Views\\Project\\Index.cshtml",
+              "ToolTip": "C:\\Users\\teimu\\source\\repos\\COMP2139-W2024\\COMP2139_Lab1\\Areas\\ProjectManagement\\Views\\Project\\Index.cshtml",
+              "RelativeToolTip": "Areas\\ProjectManagement\\Views\\Project\\Index.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-03T03:10:31.922Z",
               "EditorCaption": ""
             }
           ]

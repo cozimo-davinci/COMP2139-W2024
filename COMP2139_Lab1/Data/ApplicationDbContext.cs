@@ -16,6 +16,7 @@ namespace COMP2139_Lab1.Data
         public DbSet<ProjectTask> ProjectTasks { get; set; }
 
         public DbSet<ProjectComment> ProjectComments { get; set; }
+        
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
