@@ -139,7 +139,7 @@ namespace COMP2139_Lab1.Areas.Identity.Pages.Account.Manage
                 }
             }
 
-            if(user.usernameChangeLimit > 0)
+            if(user.usernameChangeLimit > 0 && Input.Username != null)
             {
                 if(Input.Username != user.UserName)
                 {
