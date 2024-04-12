@@ -20,6 +20,7 @@ namespace COMP2139_Lab1.Controllers
             _userManager = userManager;
         }
 
+        [HttpGet]
         public async Task<List<string>> GetUserRolesAsync(ApplicationUser user)
         {
             return new List<string>(await _userManager.GetRolesAsync(user));

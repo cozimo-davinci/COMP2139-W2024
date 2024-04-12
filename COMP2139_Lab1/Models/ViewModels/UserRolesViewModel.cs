@@ -10,5 +10,8 @@
         public string Email { get; set; }
 
         public IEnumerable<string> Roles { get; set; }
+
+        public bool IsSuperAdmin { get; set; } = true;
+        public bool IsAdmin { get; set; } = false;
     }
 }

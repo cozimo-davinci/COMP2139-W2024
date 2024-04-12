@@ -5,6 +5,7 @@ using COMP2139_Lab1.Services;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using COMP2139_Lab1.Areas.ProjectManagement.Models;
 using COMP2139_Lab1.Services.Microsoft.Extensions.Configuration;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -46,6 +47,13 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
 builder.Services.AddTransient<IEmailSender, EmailSender>();
 
 
+// Setup Serilog as the logging provider
+builder.Host.UseSerilog((hostingContext, loggerConfiguration) =>
+{
+    // Configure Serilog to read from the apps settings (appsettings.json)
+    loggerConfiguration.ReadFrom.Configuration(hostingContext.Configuration);
+}
+);
 
 var app = builder.Build();
 
@@ -71,7 +79,7 @@ try
     await ContextSeed.SeedRolesAsync(userManager, roleManager);
     
     // Seed superAdmin
-    await ContextSeed.SuperSeedRoleAsync(userManager, roleManager);
+    await ContextSeed.SuperSeedRolesAsync(userManager, roleManager);
 
 
 } catch (Exception e)

@@ -1,10 +1,13 @@
 ﻿
+
 @{
 }
 @using COMP2139_Lab1.Areas.ProjectManagement.Models
 @using Microsoft.AspNetCore.Identity
+@using COMP2139_Lab1.Models.ViewModels
 @inject UserManager<ApplicationUser> UserManager
 @inject SignInManager<ApplicationUser> SignInManager
+
 
 <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-black border-bottom box-shadow mb-3">
     <div class="container-fluid">
@@ -39,8 +42,23 @@
                     <a class="nav-link text-white" asp-area="ProjectManagement" asp-controller="Project" asp-action="Index"> <i class="fa-solid fa-flask"></i> Projects</a>
                 </li>
 
+               
+
+
+
                 @if(SignInManager.IsSignedIn(User))
                 {
+                    /*
+                    if(Model != null && Model.IsSuperAdmin != null)
+                    {
+                        @await Component.InvokeAsync("UserRole", Model.IsSuperAdmin);
+                        
+                    } */ 
+
+                    @await Component.InvokeAsync("UserRole");
+
+
+
                     // display profile
 
                     <li class="nav-item m-1">

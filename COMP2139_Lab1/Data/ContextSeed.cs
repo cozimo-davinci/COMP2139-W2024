@@ -15,7 +15,7 @@ namespace COMP2139_Lab1.Data
 
         }
 
-        public static async Task SuperSeedRoleAsync(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
+        public static async Task SuperSeedRolesAsync(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             var superUser = new ApplicationUser
             {
@@ -30,16 +30,39 @@ namespace COMP2139_Lab1.Data
             if (userManager.Users.All(u => u.Id != superUser.Id))
             {
                 var user = await userManager.FindByEmailAsync(superUser.Email);
-                if (user != null)
+                if (user == null)
                 {
-                    await userManager.CreateAsync(superUser, "admin228");
+                    var result =  await userManager.CreateAsync(superUser, "superAdmin228%");
 
-                    await userManager.AddToRoleAsync(superUser, Enum.Roles.SuperAdmin.ToString());
-                    await userManager.AddToRoleAsync(superUser, Enum.Roles.Admin.ToString());
-                    await userManager.AddToRoleAsync(superUser, Enum.Roles.Moderator.ToString());
-                    await userManager.AddToRoleAsync(superUser, Enum.Roles.Basic.ToString());
+                    if(result.Succeeded)
+                    {
+
+                        // Log Message
+                        Console.WriteLine("SuperAdmin user created successfully");
+
+                        await userManager.AddToRoleAsync(superUser, Enum.Roles.SuperAdmin.ToString());
+                        await userManager.AddToRoleAsync(superUser, Enum.Roles.Admin.ToString());
+                        await userManager.AddToRoleAsync(superUser, Enum.Roles.Moderator.ToString());
+                        await userManager.AddToRoleAsync(superUser, Enum.Roles.Basic.ToString());
+
+                    }
+                    else
+                    {
+                        // Log errors if user creation fails
+                        foreach (var error in result.Errors)
+                        {
+                            Console.WriteLine($"Error creating SuperAdmin user: {error.Description}");
+                        }
+                    }
                 }
+                else
+                {
+                    // Log that the user already exists
+                    Console.WriteLine("SuperAdmin user already exists.");
+                }
+
+            }
             }
         }
     }
-}
+
