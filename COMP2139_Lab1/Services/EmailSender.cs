@@ -33,7 +33,7 @@ namespace COMP2139_Lab1.Services.Microsoft.Extensions.Configuration
         {
             var apiKey = _configuration["SendGrid:ApiKey"];
             var client = new SendGridClient(apiKey);
-            var from = new EmailAddress("teimur.terchyyev@georgebrown.ca", "Teimur");
+            var from = new EmailAddress("teimur.terchyyev@georgebrown.ca", "Project Collaborator");
             var to = new EmailAddress(email);
             var msg = MailHelper.CreateSingleEmail(from, to, subject, "", htmlMessage);
             return client.SendEmailAsync(msg);

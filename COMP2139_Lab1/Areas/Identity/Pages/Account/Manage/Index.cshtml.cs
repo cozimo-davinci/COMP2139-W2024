@@ -110,9 +110,15 @@ namespace COMP2139_Lab1.Areas.Identity.Pages.Account.Manage
                 return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
             }
 
+            if (Request.Query.ContainsKey("usernameUpdated") && Request.Query["usernameUpdated"] == "true")
+            {
+                StatusMessage = "Username updated successfully";
+            }
+
             await LoadAsync(user);
             return Page();
         }
+
 
         public async Task<IActionResult> OnPostAsync()
         {
@@ -139,32 +145,32 @@ namespace COMP2139_Lab1.Areas.Identity.Pages.Account.Manage
                 }
             }
 
-            if(user.usernameChangeLimit > 0 && Input.Username != null)
+            if (user.usernameChangeLimit > 0 && Input.Username != null)
             {
-                if(Input.Username != user.UserName)
+                if (Input.Username != user.UserName)
                 {
-                   var usernameExists = await _userManager.FindByNameAsync(Input.Username);
+                    var usernameExists = await _userManager.FindByNameAsync(Input.Username);
                     if (usernameExists != null)
                     {
                         StatusMessage = "Error: Username not available. Please enter a new username!";
                         return RedirectToPage();
                     }
-                    var setUsername =  await _userManager.SetUserNameAsync(user, Input.Username);
+                    var setUsername = await _userManager.SetUserNameAsync(user, Input.Username);
 
                     if (!setUsername.Succeeded)
                     {
                         StatusMessage = "Error: Unexpected error when attempting to update the username";
                         return RedirectToPage();
-                    } 
+                    }
                     else
                     {
                         user.UserName = Input.Username;
                         user.usernameChangeLimit -= 1;
                         await _userManager.UpdateAsync(user);
+                        return RedirectToPage(new { usernameUpdated = true });
                     }
                 }
             }
-
 
             var firstName = user.FirstName;
             if (Input.FirstName != firstName)
@@ -192,11 +198,10 @@ namespace COMP2139_Lab1.Areas.Identity.Pages.Account.Manage
                 await _userManager.UpdateAsync(user);
             }
 
-
-
             await _signInManager.RefreshSignInAsync(user);
             StatusMessage = "Your profile has been updated";
             return RedirectToPage();
         }
     }
-}
+
+    }
